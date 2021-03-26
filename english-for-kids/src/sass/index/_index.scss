@@ -1,0 +1,46 @@
+body {
+    background: $backgroundPrimary;
+    margin: 0px 0px 0px 5px;
+    min-height: 100vh;
+}
+
+.header {
+    display: grid;
+    position: relative;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+main {
+    // min-height: 100vh;
+    max-width: 99vw;
+}
+
+.container {
+    background-color: $backgroundPrimary;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax($containerGrid, 1fr));
+    grid-gap: 6vh;
+    justify-content: space-around;
+    align-content: space-evenly;
+    padding: 10vh 5vh;
+}
+
+.wrapper {
+    margin-top: 5vh;
+}
+
+.fotter {
+    display: flex;
+    justify-content: center;
+}
+
+.fotter span {
+    font-family: cursive;
+    font-size: 24px;
+    color: white;
+}
+
+.fotter a {
+    color: $backgroundSecondaryDark;
+}

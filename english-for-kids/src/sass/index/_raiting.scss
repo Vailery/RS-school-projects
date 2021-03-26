@@ -1,0 +1,26 @@
+.rating {
+    display: grid;
+    position: absolute;
+    justify-content: flex-end;
+    grid-auto-flow: column;
+    z-index: 100;
+    top: 0;
+    left: 6vw;
+    width: 85vw;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.star-error, .star-succes {
+    min-width: 40px;
+    height: 40px;
+    background-size: contain;
+}
+
+.star-succes {
+    background-image: url('../img/star-win.svg');
+}
+
+.star-error {
+    background-image: url('../img/star.svg');
+}

@@ -1,0 +1,28 @@
+/* font-family: "GothamSSm-Medium-Regular" */
+
+@font-face {
+    font-family: "GothamSSm-Medium";
+    src: url("../fonts/Gotham/Gotham-Medium-Regular.ttf") format("ttf");
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+/* font-family: "GothamSSm-Book" */
+
+@font-face {
+    font-family: "GothamSSm-Book";
+    src: url("../fonts/Gotham/GothamSSm-Book.ttf") format("ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+/* font-family: "GothamSSm-Light" */
+
+@font-face {
+    font-family: "GothamSSm-Light";
+    src: url("../fonts/Gotham/GothamSSm-Lightk.ttf") format("ttf");
+    font-style: normal;
+    font-weight: normal;
+}

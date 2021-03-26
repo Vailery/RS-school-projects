@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Cozy House | Pets</title>
+    <link rel="shortcut icon" href="./../../assets/images/start-screen-puppy-320.png" type="image/x-icon">
+    <link href="../../assets/css/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header is-stiky">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__sitename">
+                    <div class="header__title" data-link="./../main/main.html">
+                        <h1>Cozy House</h1>
+                    </div>
+                    <div class="header__subtitle">
+                        <p>Shelter for pets in Boston</p>
+                    </div>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li class="header__nav-link"><a href="./../main/main.html">About the shelter</a></li>
+                        <li class="header__nav-link active"><a href="./../pets/pets.html">Our pets</a></li>
+                        <li class="header__nav-link"><a href="javascript:void(0);" class="is-disabled">Help the shelter</a></li>
+                        <li class="header__nav-link"><a href="javascript:void(0);" class="is-disabled">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="header__burger">
+                    <div class="header__burger-icon js-mobmenu-toggle">
+                        <svg width="30" height="22">
+                            <use xlink:href="./../../assets/icons/icons.svg#burger" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="catalog js-catalog-pets">
+            <div class="container">
+                <div class="catalog__title">
+                    <h3>Our friends who<br> are looking for a house</h3>
+                </div>
+                <div class="catalog__wrapper">
+                    <div class="catalog__content" data-catalog="catalog"></div>
+                </div>
+                <div class="catalog__pagination">
+                    <div class="catalog__pagination-arrow catalog__pagination-arrow--left catalog__pagination-arrow--one">
+                        <button class="btn btn-icon rotate-180" disabled data-catalog="arrow-left">
+                    <svg width="25" height="11">
+                      <use xlink:href="./../../assets/icons/icons.svg#l-d-arrow" />
+                    </svg>
+                  </button>
+                    </div>
+                    <div class="catalog__pagination-arrow catalog__pagination-arrow--left catalog__pagination-arrow--double">
+                        <button class="btn btn-icon rotate-180" disabled data-catalog="arrow-left-one">
+                    <svg width="10" height="11">
+                      <use xlink:href="./../../assets/icons/icons.svg#l-o-arrow" />
+                    </svg>
+                  </button>
+                    </div>
+
+                    <div class="catalog__pagination-number">
+                        <button class="btn btn-icon active">
+                    <span data-catalog="current-list">1</span>
+                  </button>
+                    </div>
+
+                    <div class="catalog__pagination-arrow catalog__pagination-arrow--right catalog__pagination-arrow--one">
+                        <button class="btn btn-icon" data-catalog="arrow-right-one">
+                    <svg width="10" height="11">
+                      <use xlink:href="./../../assets/icons/icons.svg#o-arrow" />
+                    </svg>
+                  </button>
+                    </div>
+                    <div class="catalog__pagination-arrow catalog__pagination-arrow--right catalog__pagination-arrow--double">
+                        <button class="btn btn-icon" data-catalog="arrow-right">
+                    <svg width="25" height="11">
+                      <use xlink:href="./../../assets/icons/icons.svg#d-arrow" />
+                    </svg>
+                  </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__wrapper container">
+            <div class="footer__col">
+                <div class="footer__content">
+                    <div class="footer__content-title">
+                        <h3>For questions <br>and suggestions</h3>
+                    </div>
+                    <div class="footer__link">
+                        <div class="footer__link-icon">
+                            <svg width="40" height="26">
+                                <use xlink:href="./../../assets/icons/icons.svg#icon-email" />
+                            </svg>
+                        </div>
+                        <a href="mailto:email@shelter.com" class="footer__link-context">email@shelter.com</a>
+                    </div>
+                    <div class="footer__link">
+                        <div class="footer__link-icon">
+                            <svg width="40" height="32">
+                                <use xlink:href="./../../assets/icons/icons.svg#icon-phone" />
+                            </svg>
+                        </div>
+                        <a href="tel:+136745677554" class="footer__link-context">+13 674 567 75 54</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__content footer__content--middle">
+                    <div class="footer__content-title">
+                        <h3>We are waiting <br>for your visit</h3>
+                    </div>
+                    <div class="footer__link">
+                        <div class="footer__link-icon">
+                            <svg width="22" height="32">
+                                <use xlink:href="./../../assets/icons/icons.svg#icon-marker" />
+                            </svg>
+                        </div>
+                        <a href="https://goo.gl/maps/ZRfx97SqmdvJX1k89" class="footer__link-context" target="_blank">1
+                            Central Street, Boston <br>(entrance from the store)</a>
+                    </div>
+                    <div class="footer__link">
+                        <div class="footer__link-icon">
+                            <svg width="22" height="32">
+                                <use xlink:href="./../../assets/icons/icons.svg#icon-marker" />
+                            </svg>
+                        </div>
+                        <a href="https://goo.gl/maps/j4hF8xBytEEht7zt9" class="footer__link-context" target="_blank">18
+                            South Park, London</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__col">
+                <div class="footer__image">
+                    <picture>
+                        <source srcset="./../../assets/images/footer-puppy-320.png" media="(max-width: 767px)">
+                        <img src="./../../assets/images/footer-puppy.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="popup js-popup">
+        <div class="popup__outer">
+            <div class="popup__inner">
+                <div class="popup__close js-popup-close">
+                    <svg width="12" height="12">
+                        <use xlink:href="./../../assets/icons/icons.svg#close" />
+                    </svg>
+                </div>
+                <div class="popup__wrapper" data-popup-wrapper></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js" integrity="sha512-7XdqOa4bqU/hqbUuS8epr0ECSj9laLWnualyqow2TQ3RJ+TUoac0yKNjEtgg3gHGEbM+Jbwgo6K/+Y/0mJHOfA==" crossorigin="anonymous"></script>
+    <script src="../../assets/js/index.min.js"></script>
+    <script src="../../assets/js/main.min.js"></script>
+</body>
+
+</html>

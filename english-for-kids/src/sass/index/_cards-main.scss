@@ -1,0 +1,77 @@
+.card__main {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: $mainCardsWdidth;
+    height: $mainCardHeight;
+    background: -webkit-gradient(linear, left top, left bottom, from(#0099ae), color-stop(40%, #00bf82), color-stop(40%, #fff), to(#fff));
+    background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    -webkit-box-shadow: 10px 10px 11px 7px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow: 10px 10px 11px 7px rgba(50, 50, 50, 0.75);
+    box-shadow: 10px 10px 11px 7px rgba(50, 50, 50, 0.75);
+    color: #212529;
+    font-family: $fontFamilyMain;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+    cursor: pointer;
+    -webkit-transition: 3s;
+    transition: .3s;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    -webkit-transition: 1s;
+    -moz-transition: 3s;
+    -ms-transition: 3s;
+    -o-transition: 3s;
+    transition: 3s;
+    @media screen and (max-width: 349px) {
+        width: 270px;
+        height: 218px;
+    }
+    &:active {
+        -webkit-box-shadow: 10px 10px 11px 7px rgba(50, 50, 50, 0.178);
+        -moz-box-shadow: 10px 10px 11px 7px rgba(50, 50, 50, 0.178);
+        box-shadow: 10px 10px 11px 7px rgba(50, 50, 50, 0.178);
+        transform: rotateY(360deg);
+        -webkit-transform: rotateY(360deg);
+        -moz-transform: rotateY(360deg);
+        -ms-transform: rotateY(360deg);
+        -o-transform: rotateY(360deg);
+    }
+    .front {
+        display: grid;
+        user-select: none;
+        img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            border: 10px double #fff;
+            object-fit: cover;
+            margin: 30px auto;
+        }
+        span {
+            text-align: center;
+            margin-top: -12%;
+        }
+    }
+    .text {
+        color: #0c0c0c;
+        width: $mainCardsWdidth;
+        p {
+            width: inherit;
+            text-align: center;
+            margin-top: -24px;
+        }
+    }
+}
+
+.cards-main--orange {
+    transition: 0.3s ease-in 0s;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fd6a63), color-stop(40%, #feb46b), color-stop(40%, #fff), to(#fff));
+    background: linear-gradient(to top, #a8edea 0%, #a13869 100%);
+}

@@ -1,0 +1,124 @@
+.header__menu-mobile {
+    color: $hamburgerLine;
+    position: absolute;
+    top: -35px;
+    margin-left: -5px;
+    left: -360px;
+    transition: left 1s;
+}
+
+.hamburger {
+    position: absolute;
+    z-index: 100;
+    width: 60px;
+    height: 40px;
+    margin: 25px;
+    padding-top: 10px;
+    transition: transform 1s;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -ms-transition: left 1s;
+    -o-transition: left 1s;
+    top: -34px;
+    left: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: $colorlink;
+    width: 200px;
+}
+
+.hamburger__line {
+    position: absolute;
+    top: calc(50% - 5px);
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: '';
+    border-radius: 5px;
+    background-color: $hamburgerLine;
+}
+
+.hamburger::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: '';
+    border-radius: 5px;
+    background-color: $hamburgerLine;
+}
+
+.hamburger::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: inline-block;
+    width: 100%;
+    height: 10px;
+    content: '';
+    border-radius: 5px;
+    background-color: $hamburgerLine;
+}
+
+.hamburger_rotate {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transition: left 1s;
+    -webkit-transition: left 1s;
+    -moz-transition: left 1s;
+    -ms-transition: left 1s;
+    -o-transition: left 1s;
+    left: 75px;
+}
+
+.menu-mobile__wrapper {
+    position: relative;
+    z-index: 99;
+    min-width: 220px;
+    height: 100%;
+    background-color: $backgroundPrimaryDark;
+    padding-right: 6.5vh;
+    padding: 10px;
+    margin-top: -15px;
+    border-radius: 0 25% 25% 0;
+}
+
+.menu-mobile_table {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding-top: 15vh;
+    // padding-bottom: 100vh;
+}
+
+.menu-mobile_item {
+    display: flex;
+    margin-bottom: -25px;
+    letter-spacing: -0.3px;
+    color: $hamburgerLine;
+    font-family: $fontFamilyMain;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 82px;
+    user-select: none;
+}
+
+.hidden {
+    display: none;
+}
+
+.header__menu_active {
+    color: #13547a;
+}
+
+.menu-mobile__wrapper--visible {
+    left: 0px;
+}

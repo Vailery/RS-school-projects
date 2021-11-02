@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/Calculator.ico" type="image/x-icon">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="reference">
+        <h4>Calculator</h4>
+        <div class="info">
+            <p>Небольшая справка
+                <button id="dropbtn">&#9660;</button>
+            </p>
+            <ul class="dropdown-content">
+                <li><b>AC</b> - позволяет стереть всё;</li>
+                <li><b>DEL</b> - удаляет последнюю цифру;</li>
+                <li><b>+/-/*/÷</b> - арифметические операции сложения, вычитания, умножения и деления;</li>
+                <li><b>.</b> - позволяет вводить десятичную дробь для дальнейших вычислений;</li>
+                <li><b>=</b> - показывает результат вычисления;</li>
+                <li><b>^</b> - возведение числа в степень (3^3 =, введите число, которое необходимо возвести в степень, нажмите на '^', введите степень, в которую хотите возвести и нажмите '=');</li>
+                <li><b>√</b> - унарная операция, вычисление корня из числа (9 => √, введите число, нажмите на '√' и вы получите результат);</li>
+                <li><b>±</b> - позволяет изменить знак числа, после ввода этого числа (9 => ± => -9).</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="calculator-grid">
+        <div class="output">
+            <div data-previous-operand class="previous-operand"></div>
+            <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear> AC </button>
+        <button data-operation> ^ </button>
+        <button data-operation-sqrt> √ </button>
+        <button data-delete class="del"> DEL </button>
+        <button data-number id="operation"> 1 </button>
+        <button data-number id="operation"> 2 </button>
+        <button data-number id="operation"> 3 </button>
+        <button data-operation> ÷ </button>
+        <button data-number id="operation"> 4 </button>
+        <button data-number id="operation"> 5 </button>
+        <button data-number id="operation"> 6 </button>
+        <button data-operation> * </button>
+        <button data-number id="operation"> 7 </button>
+        <button data-number id="operation"> 8 </button>
+        <button data-number id="operation"> 9 </button>
+        <button data-operation> + </button>
+        <button data-operation> ± </button>
+        <button data-number id="operation"> 0 </button>
+        <button data-number id="operations"> . </button>
+        <button data-operation> - </button>
+        <button data-equals class="equals"> = </button>
+    </div>
+
+</body>
+
+</html>
